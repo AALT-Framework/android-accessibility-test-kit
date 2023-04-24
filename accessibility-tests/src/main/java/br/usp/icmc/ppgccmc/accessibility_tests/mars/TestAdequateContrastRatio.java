@@ -1,7 +1,5 @@
 package br.usp.icmc.ppgccmc.accessibility_tests.mars;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
 
 import android.graphics.drawable.ColorDrawable;
@@ -13,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.core.graphics.ColorUtils;
-
 
 import org.junit.rules.ErrorCollector;
 
