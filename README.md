@@ -1,4 +1,4 @@
-# Automated accessibility tests kit for Android apps
+# Automated accessibility tests kit for Android apps (AATK)
 
 This library consists of a collection of automated accessibility tests designed to run with Robolectric. This enables them to be executed as local tests, without the need for a physical or emulated device..
 
