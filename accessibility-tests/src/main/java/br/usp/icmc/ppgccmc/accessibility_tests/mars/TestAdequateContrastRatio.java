@@ -16,6 +16,7 @@ import org.junit.rules.ErrorCollector;
 
 import br.usp.icmc.ppgccmc.accessibility_tests.IAccessibilityTestViewHierarchy;
 
+
 public class TestAdequateContrastRatio implements IAccessibilityTestViewHierarchy {
     public static final double MIN_CONSTRAST_RATIO = 4.5;
 
