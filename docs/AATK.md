@@ -1,4 +1,4 @@
-# Automated accessibility tests kit (AATK)
+# Automated accessibility tests availables 
 
 ## Adequate Color Contrast Ratio (`TestAdequateContrastRatio`)
 
