@@ -2,51 +2,57 @@
 
 ## Adequate Color Contrast Ratio (`TestAdequateContrastRatio`)
 
-*Accessibility issue:* contraste de texto e/ou imagem insuficiente
+### Accessibility issue
+Insufficient text and/or image contrast.
 
-*Accessibility requirement:* deve-se utilizar uma taxa de contraste de ao menos 4.5:1
+**Requirement:** a contrast ratio of at least 4.5:1 must be used.
 
-*Target widgets:* `Button`, `ImageButton`, `ImageView`
+**Target widgets:** `Button`, `ImageButton`, `ImageView`
 
 
 ## Focus Based Navigation Support (`TestFocusBasedNavigationSuport`)
 
-*Accessibility issue:* interação e/ou navegação confusa
+### Accessibility issue:
+Confusing interaction and/or navigation.
 
-*Accessibility requirement:* aplicativo deve suportar navegação baseada em foco
+**Accessibility requirement:** application must support focus based navigation.
 
-*Target widgets:* any `AccessibilityNodeInfo`
+**Target widgets:** any `AccessibilityNodeInfo`
 
 
 ## Interaction Element Spacing (`TestInteractionElementSpacing`)
 
-*Accessibility issue:* falta de espaçamento suficiente entre os elementos
+### Accessibility issue
+Lack of sufficient spacing between elements.
 
-*Accessibility requirement:* Componentes de interação devem ter um espaçamento mínimo de 8dp entre si e das bordas da tela
+**Accessibility requirement:** Interaction components must have a minimum spacing of 8dp from each other and from screen edges.
 
 
 ## Form Control Label (`TestMustFormControlHaveLabel`)
 
-*Accessibility issue:* falta de rótulo no componente
+### Accessibility issue
+Missing component label
 
-*Accessibility requirement:* para cada controle de formulário, deve existir um TextView com o atributo labelFor associado, ou deve ter o atributo hint fornecido
+**Accessibility requirement:** there must be a TextView with the labelFor attribute associated with it, or it must have the hint attribute provided for each form control.
 
-*Target widgets:* `EditText`, `CheckBox`, `RadioButton`, `Switch`
+**Target widgets:** `EditText`, `CheckBox`, `RadioButton`, `Switch`
 
 
 ## Non-textual Content Alternative Text (`TestMustHaveAlternativeText`)
 
-*Accessibility issue:* imagens e/ou ícones sem alternativa textual
+### Accessibility issue
+Images and/or icons without textual alternative
 
-*Accessibility requirement:* todo conteúdo não textual, como imagens e conteúdo de mídia, deve possuir descrição alternativa em  texto, explicando o conteúdo e/ou propósito do elemento
+**Accessibility requirement:** all non-text content, such as images and media content, must have an alternative text description explaining the content and/or purpose of the element
 
-*Target widgets:* `ImageButton`, `ImageView`
+**Target widgets:** `ImageButton`, `ImageView`
 
 
 ## Touch Target Size (`TestTouchTargetSize`)
 
-*Accessibility issue:* tamanho do alvo de touch inadequado
+### Accessibility issue
+Touch target size smaller than recommended
 
-*Accessibility requirement:* alvo de toque deve ter pelo menos 48x48
+**Accessibility requirement:** touch target must be at least 48x48
 
-*Target widgets:* `Button`, `ImageButton`
+**Target widgets:** `Button`, `ImageButton`
