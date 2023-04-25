@@ -82,4 +82,4 @@ Currently, this kit performs the following checks:
 
 Contributions to this library are welcome. If you find any bugs or issues, please feel free to open an issue or submit a pull request.
 
-The kit of tests is quickly extensible. A list of accessibility issues to be addressed can be found [here](AATK.md).
+The kit of tests is quickly extensible. A list of accessibility issues to be addressed can be found [here](docs/AATK.md).
