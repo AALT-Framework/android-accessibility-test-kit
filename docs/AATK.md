@@ -2,7 +2,6 @@
 
 ## Adequate Color Contrast Ratio (`TestAdequateContrastRatio`)
 
-### Accessibility issue
 Insufficient text and/or image contrast.
 
 **Requirement:** a contrast ratio of at least 4.5:1 must be used.
@@ -12,7 +11,6 @@ Insufficient text and/or image contrast.
 
 ## Focus Based Navigation Support (`TestFocusBasedNavigationSuport`)
 
-### Accessibility issue:
 Confusing interaction and/or navigation.
 
 **Accessibility requirement:** application must support focus based navigation.
@@ -22,7 +20,6 @@ Confusing interaction and/or navigation.
 
 ## Interaction Element Spacing (`TestInteractionElementSpacing`)
 
-### Accessibility issue
 Lack of sufficient spacing between elements.
 
 **Accessibility requirement:** Interaction components must have a minimum spacing of 8dp from each other and from screen edges.
@@ -30,7 +27,6 @@ Lack of sufficient spacing between elements.
 
 ## Form Control Label (`TestMustFormControlHaveLabel`)
 
-### Accessibility issue
 Missing component label
 
 **Accessibility requirement:** there must be a TextView with the labelFor attribute associated with it, or it must have the hint attribute provided for each form control.
@@ -40,7 +36,6 @@ Missing component label
 
 ## Non-textual Content Alternative Text (`TestMustHaveAlternativeText`)
 
-### Accessibility issue
 Images and/or icons without textual alternative
 
 **Accessibility requirement:** all non-text content, such as images and media content, must have an alternative text description explaining the content and/or purpose of the element
@@ -50,7 +45,6 @@ Images and/or icons without textual alternative
 
 ## Touch Target Size (`TestTouchTargetSize`)
 
-### Accessibility issue
 Touch target size smaller than recommended
 
 **Accessibility requirement:** touch target must be at least 48x48
