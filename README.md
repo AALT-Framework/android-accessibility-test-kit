@@ -72,7 +72,7 @@ Currently, this kit performs the following checks:
 | Test | Test Class Name | Description |
 | ------------- | ------------- | ------------- |
 | Color contrast | TestAdequateContrastRatio | A contrast ratio of at least 4.5:1 should be used |
-<> | Focus based navigation support | TestFocusBasedNavigationSuport | The app must support focus-based navigation |
+[comment] <> | Focus based navigation support | TestFocusBasedNavigationSuport | The app must support focus-based navigation |
 | Spacing | TestInteractionElementSpacing | Interaction components should have a minimum spacing of 8dp |
 | Component label | TestMustFormControlHaveLabel | Form controls must have and associated label | 
 | Alternative text | TestMustHaveAlternativeText | All non-textual content must have an alternative text description |
