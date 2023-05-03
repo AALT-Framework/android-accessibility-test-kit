@@ -78,8 +78,10 @@ Currently, this kit performs the following checks:
 | Alternative text | TestMustHaveAlternativeText | All non-textual content must have an alternative text description |
 | Touch target size | TestTouchTargetSize | All interaction elements should have a minimum of 48x48dp |
 
+Visit the [test description page](docs/AATK.md) for more information.
+
 ## Contributing
 
 Contributions to this library are welcome. If you find any bugs or issues, please feel free to open an issue or submit a pull request.
 
-The kit of tests is quickly extensible. A list of accessibility issues to be addressed can be found [here](docs/AATK.md).
+The kit of tests is quickly extensible. A list of accessibility issues to be addressed can be found [here](docs/AcessibilityIssues.md).
