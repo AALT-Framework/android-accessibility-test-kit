@@ -8,6 +8,11 @@ import org.junit.rules.ErrorCollector;
 
 import br.usp.icmc.ppgccmc.accessibility_tests.IAccessibilityTestSelfContained;
 import br.usp.icmc.ppgccmc.accessibility_tests.IAccessibilityTestViewHierarchy;
+import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestAdequateContrastRatio;
+import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestInteractionElementSpacing;
+import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestMustFormControlHaveLabel;
+import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestMustHaveAlternativeText;
+import br.usp.icmc.ppgccmc.accessibility_tests.mars.TestTouchTargetSize;
 
 /**
  * Test Runner for accessibility tests.
@@ -50,6 +55,18 @@ public class AccessibilityTestRunner {
                 runAccessibilityTest(viewGroup.getChildAt(i), acTest);
             }
         }
+    }
+
+    /**
+     * Run all default tests from kit
+     * @param rootView root view
+     */
+    public void runAllAccessibilityTests(View rootView){
+        runAccessibilityTest(rootView, new TestAdequateContrastRatio());
+        runAccessibilityTest(rootView, new TestInteractionElementSpacing());
+        runAccessibilityTest(rootView, new TestMustFormControlHaveLabel());
+        runAccessibilityTest(rootView, new TestMustHaveAlternativeText());
+        runAccessibilityTest(rootView, new TestTouchTargetSize());
     }
 
     /**
