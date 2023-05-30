@@ -1,6 +1,7 @@
 package br.usp.icmc.ppgccmc.accessibility_tests.mars;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertTrue;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import br.usp.icmc.ppgccmc.accessibility_tests.IAccessibilityTestSelfContained;
+import br.usp.icmc.ppgccmc.accessibility_tests.helpers.TestOutputHelper;
 
 public class TestInteractionElementSpacing implements IAccessibilityTestSelfContained {
     @Override
@@ -66,7 +68,7 @@ public class TestInteractionElementSpacing implements IAccessibilityTestSelfCont
         float x2 = view2.getTranslationX() + view2.getWidth() / 2f;
 
         float distance = (float) Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        collector.checkThat(String.format("Distance between %s and %s is less than 8 pixels", view1, view2), distance >= 8f, is(true));
-        //assertTrue(String.format("Distance between %s and %s is less than 8 pixels", view1, view2), distance >= 8f);
+        //collector.checkThat(String.format("Distance between %s and %s is less than 8 pixels", view1, view2), distance >= 8f, is(true));
+        assertTrue(String.format("Distance between %s and %s is less than 8 pixels", TestOutputHelper.getViewId(view1), TestOutputHelper.getViewId(view2)), distance >= 8f);
     }
 }

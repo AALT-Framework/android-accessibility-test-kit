@@ -1,5 +1,6 @@
 package br.usp.icmc.ppgccmc.accessibility_tests.mars;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Switch;
 import org.junit.rules.ErrorCollector;
 
 import br.usp.icmc.ppgccmc.accessibility_tests.IAccessibilityTestViewHierarchy;
+import br.usp.icmc.ppgccmc.accessibility_tests.helpers.TestOutputHelper;
 
 public class TestMustFormControlHaveLabel implements IAccessibilityTestViewHierarchy {
     @Override
@@ -33,6 +35,6 @@ public class TestMustFormControlHaveLabel implements IAccessibilityTestViewHiera
             }
         }
 
-        collector.checkThat("Input " + view + " has no label associated",  hasLabelFor, is(true));
+        assertThat("Input " + TestOutputHelper.getViewId(view) + " has no label associated",  hasLabelFor, is(true));
     }
 }
