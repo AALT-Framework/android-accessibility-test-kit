@@ -42,7 +42,7 @@ public class TestFocusBasedNavigationSuport implements IAccessibilityTestSelfCon
         // Recycle the root node to avoid memory leaks
         rootNode.recycle();
 
-        collector.checkThat("Existem elementos de interação sem suporte para navegação baseada em foco",  numberOfUnfocusableNodes, equalTo(0));
+        assertThat("Existem elementos de interação sem suporte para navegação baseada em foco",  numberOfUnfocusableNodes, equalTo(0));
         //assertThat(numberOfUnfocusableNodes, equalTo(0));
     }
 }

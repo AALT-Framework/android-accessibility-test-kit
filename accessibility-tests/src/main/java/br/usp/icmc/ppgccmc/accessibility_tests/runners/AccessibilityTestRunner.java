@@ -45,7 +45,11 @@ public class AccessibilityTestRunner {
     public void runAccessibilityTest(View view, IAccessibilityTestViewHierarchy acTest){
         // If view belongs to the test targets, execute the test
         if(isViewInList(view, acTest.getApplicableWidgets())) {
-            acTest.runTest(view, collector);
+            try {
+                acTest.runTest(view, collector);
+            } catch (Exception e){
+                collector.addError(e);
+            }
         }
 
         // If it's a viewgroup, perform a recursive call to child views
@@ -63,10 +67,10 @@ public class AccessibilityTestRunner {
      */
     public void runAllAccessibilityTests(View rootView){
         runAccessibilityTest(rootView, new TestAdequateContrastRatio());
-        runAccessibilityTest(rootView, new TestInteractionElementSpacing());
         runAccessibilityTest(rootView, new TestMustFormControlHaveLabel());
         runAccessibilityTest(rootView, new TestMustHaveAlternativeText());
         runAccessibilityTest(rootView, new TestTouchTargetSize());
+        runAccessibilityTest(rootView, new TestInteractionElementSpacing());
     }
 
     /**

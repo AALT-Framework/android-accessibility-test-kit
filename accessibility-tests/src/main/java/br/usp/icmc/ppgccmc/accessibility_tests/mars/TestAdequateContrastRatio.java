@@ -15,6 +15,7 @@ import androidx.core.graphics.ColorUtils;
 import org.junit.rules.ErrorCollector;
 
 import br.usp.icmc.ppgccmc.accessibility_tests.IAccessibilityTestViewHierarchy;
+import br.usp.icmc.ppgccmc.accessibility_tests.helpers.TestOutputHelper;
 
 
 public class TestAdequateContrastRatio implements IAccessibilityTestViewHierarchy {
@@ -50,7 +51,7 @@ public class TestAdequateContrastRatio implements IAccessibilityTestViewHierarch
 
                 // Assert that the contrast ratio is greater than 4.5:1, which is the minimum requirement for WCAG 2.0 AA level compliance
                 //assertThat("Taxa de contraste inadequada para " + view.getTag(),  ratio, greaterThan(MIN_CONSTRAST_RATIO));
-                collector.checkThat("Taxa de contraste inadequada para " + view,  ratio, greaterThan(MIN_CONSTRAST_RATIO));
+                collector.checkThat("Taxa de contraste inadequada para " + TestOutputHelper.getViewId(view),  ratio, greaterThan(MIN_CONSTRAST_RATIO));
 
             }catch (Exception e){
                 System.out.println(e.getMessage());
