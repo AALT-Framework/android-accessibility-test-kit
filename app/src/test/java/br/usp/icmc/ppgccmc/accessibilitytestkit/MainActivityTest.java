@@ -49,22 +49,8 @@ public class MainActivityTest {
     }
 
     @Test
-    public void testMultipleAssertions() {
-        String s = "hello";
-        collector.checkThat("Length is incorrect", s.length(), equalTo(6));
-        collector.checkThat("String does not start with 'h'", s, startsWith("e"));
-        collector.checkThat("String does not end with 'o'", s, endsWith("l"));
-    }
-
-    @Test
     public void testAccessibility() {
         runner.runAllAccessibilityTests(rootView);
-        //runner.runAccessibilityTest(rootView, new TestMustHaveAlternativeText());
-        /*runner.runAccessibilityTest(rootView, new TestAdequateContrastRatio());
-        runner.runAccessibilityTest(rootView, new TestFocusBasedNavigationSuport());
-        runner.runAccessibilityTest(rootView, new TestMustFormControlHaveLabel());
-        runner.runAccessibilityTest(rootView, new TestTouchTargetSize());
-        runner.runAccessibilityTest(rootView, new TestInteractionElementSpacing());*/
     }
 
     @Test
