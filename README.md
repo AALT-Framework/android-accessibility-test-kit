@@ -31,7 +31,7 @@ android{
 dependencies {
     ...
     testImplementation 'org.robolectric:robolectric:4.9'
-    testImplementation 'com.github.andersongarcia:android-accessibility-test-kit:v1.0.0'
+    testImplementation 'com.github.AALT-Framework:android-accessibility-test-kit:v1.0.0-alpha'
     ...
 }
 ```
