@@ -8,7 +8,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        minSdk 21
+        minSdk 23
         targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -54,7 +54,7 @@ afterEvaluate {
 
             groupId='br.usp.icmc.ppgccmc.accessibility-tests'
             artifactId='android-accessibility-test-kit'
-            version='1.0.0'
+            version='0.0.2'
         }
 
     }
