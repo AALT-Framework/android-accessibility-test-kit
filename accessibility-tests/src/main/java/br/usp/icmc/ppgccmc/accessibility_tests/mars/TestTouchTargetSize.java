@@ -19,9 +19,12 @@ public class TestTouchTargetSize implements IAccessibilityTestViewHierarchy {
 
     @Override
     public void runTest(View view, ErrorCollector collector) {
-        assertTrue("Touch target size less then 48dp in : " + TestOutputHelper.getViewId(view), view.getHeight() < 48 || view.getWidth() < 48);
-        /*if(view.getHeight() < 48 || view.getWidth() < 48){
+        //assertTrue("Touch target size less then 48dp in : " + TestOutputHelper.getViewId(view), view.getHeight() < 48 || view.getWidth() < 48);
+        if(view.getHeight() < 48 || view.getWidth() < 48){
             collector.addError(new Throwable("Touch target size less then 48dp in : " + view));
-        }*/
+        }
     }
 }
+
+
+
